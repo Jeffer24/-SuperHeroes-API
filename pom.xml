@@ -81,6 +81,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>prueba-asd</finalName>
 	</build>
 	<repositories>
 		<repository>
