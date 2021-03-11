@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "005c0a16-9669-4e1d-b00d-aac0b8e1bfff",
+		"name": "Vehiculo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarVehiculosFiltro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoVehiculo\":\"terr\",\r\n    \"descripcion\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/vehiculo/obtener-filtros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"vehiculo",
+						"obtener-filtros"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

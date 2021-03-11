@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "50aa0076-a6f3-4646-b90c-f13b857c848c",
+		"name": "SuperHumanos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListarSuperHumanos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/super-humano/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"super-humano",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListarSuperHumanosFiltro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"condicion\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/super-humano/obtener-filtros",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"super-humano",
+						"obtener-filtros"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GuardarSuperHumano",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"nombre\":\"\",\r\n    \"ciudad\":\"Tierra\",\r\n    \"condicion\":null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/super-humano/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"super-humano",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
